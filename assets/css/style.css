@@ -161,6 +161,32 @@ address {
   padding: 0.9rem;
 }
 
+.poster-resources {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1rem 0 1.2rem;
+}
+
+.poster-resources article {
+  background: #f4f8fa;
+  border: 1px solid #dbe5ea;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.poster-resources .button {
+  font-size: 0.95rem;
+}
+
+.poster-list {
+  margin-top: 0;
+}
+
+.guidelines-title {
+  margin-top: 0.3rem;
+}
+
 .button {
   display: inline-block;
   text-decoration: none;
@@ -208,7 +234,8 @@ footer p + p {
 }
 
 @media (max-width: 860px) {
-  .provisional-grid {
+  .provisional-grid,
+  .poster-resources {
     grid-template-columns: 1fr;
   }
 
