@@ -144,8 +144,25 @@ ul {
   padding-left: 1.2rem;
 }
 
+figure {
+  margin: 0;
+}
+
 address {
   font-style: normal;
+}
+
+.photo-feature {
+  overflow: hidden;
+  border: 1px solid #dbe5ea;
+  border-radius: 10px;
+  background: #f4f8fa;
+}
+
+.photo-feature img {
+  width: 100%;
+  aspect-ratio: 4000 / 1848;
+  object-fit: cover;
 }
 
 .provisional-grid {
@@ -181,6 +198,35 @@ address {
 
 .poster-list {
   margin-top: 0;
+}
+
+.download-list {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.download-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #dbe5ea;
+}
+
+.download-list a {
+  color: #123446;
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16rem;
+}
+
+.download-list span {
+  flex: 0 0 auto;
+  color: #566775;
+  font-size: 0.92rem;
 }
 
 .guidelines-title {
@@ -250,6 +296,15 @@ address {
   border-color: var(--color-secondary);
 }
 
+.button-disabled,
+.button-disabled:hover,
+.button-disabled:focus-visible {
+  cursor: not-allowed;
+  background: #e6ecef;
+  border-color: #c9d6dc;
+  color: #566775;
+}
+
 footer {
   background: var(--color-primary);
   color: #ffffff;
@@ -287,5 +342,14 @@ footer p + p {
 
   section {
     padding: 1.1rem;
+  }
+
+  .download-list li {
+    display: block;
+  }
+
+  .download-list span {
+    display: block;
+    margin-top: 0.15rem;
   }
 }
