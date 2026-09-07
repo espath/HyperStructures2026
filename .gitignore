@@ -2,3 +2,8 @@
 
 # Local planning notes
 github_pages_plan_hyperstructures2026.md
+
+# Keep website talk downloads in PDF format.
+talks/*.ppt
+talks/*.pptx
+!talks/*.pdf
